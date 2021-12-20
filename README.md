@@ -24,7 +24,7 @@ yarn add -D cypress-cucumber-tagging
 // cypress/support/index.js
 // load and register the tag feature
 // https://github.com/RSMuthu/cypress-cucumber-tagging
-require('cypress-grep/src/support')()
+require('cypress-cucumber-tagging/src/support')()
 ```
 
 ### Plugin file
@@ -35,7 +35,7 @@ require('cypress-grep/src/support')()
 // cypress/plugins/index.js
 module.exports = (on, config) => {
   // https://github.com/RSMuthu/cypress-cucumber-tagging
-  require('cypress-grep/src/plugin')(config)
+  require('cypress-cucumber-tagging/src/plugin')(config)
   // make sure to return the config object
   // as it might have been modified by the plugin
   return config
