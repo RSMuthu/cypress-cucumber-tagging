@@ -87,4 +87,4 @@ You can run both of these test cases using `--env tags=@config` string. (all the
 
 As a _**best practice**_, please use the `'@'` symbol as prefix to the tag word used in any test.
 
-Author: Muthu Kumaran R &lt;muthukumaranr95@gmail.com&gt;
+Author: Muthu Kumaran R &lt;rsmuthu@duck.com&gt;

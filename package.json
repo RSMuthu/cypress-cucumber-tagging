@@ -1,6 +1,6 @@
 {
   "name": "cypress-cucumber-tagging",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Module to help in cucumber based tag expression for executing Cypress test suite/case based on given tag expression",
   "main": "index.js",
   "scripts": {

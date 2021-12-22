@@ -10,7 +10,7 @@ function GrepSpecOnTag (config) {
   if (!config.env.tags) return config
   console.log(`The Tag expression input for testing: "${config.env.tags.trim()}"`)
   // find the path of spec files
-  const specBasePath = (config.testing === 'e2e') ? config.integrationFolder : config.componentFolder
+  const specBasePath = (config.testingType === 'e2e') ? config.integrationFolder : config.componentFolder
   const specFiles = globby.sync(config.testFiles, {
     cwd: specBasePath,
     ignore: config.ignoreTestFiles,
