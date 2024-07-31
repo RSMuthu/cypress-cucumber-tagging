@@ -25,7 +25,7 @@ const cypressTagGrep = () => {
 
     if (!callback) {
       // the pending suite by itself
-      const result = _describe(name, options)
+      const result = _describe(description, options)
       suiteStack.pop()
       return result
     }
@@ -38,7 +38,7 @@ const cypressTagGrep = () => {
     }
 
     // if the suite has its own tags or not, it can go ahead
-    _describe(name, options, callback)
+    _describe(description, options, callback)
     suiteStack.pop()
 
     return
@@ -54,7 +54,7 @@ const cypressTagGrep = () => {
 
     if (!callback) {
       // the pending test by itself
-      return _it(name, options)
+      return _it(description, options)
     }
 
     const configTags = options ? options.tags : [] // tags provided for the test case/suite
